@@ -1,4 +1,3 @@
-// app/layout.tsx
 import type { Metadata } from "next";
 import GlobalStyles from "@/components/GlobalStyles";
 
