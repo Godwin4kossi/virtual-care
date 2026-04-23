@@ -1,4 +1,3 @@
-// components/MiniDoctorCard.tsx
 "use client";
 import { Avatar, Badge, StarRating, Btn } from "@/components/ui";
 import T from "@/lib/tokens";

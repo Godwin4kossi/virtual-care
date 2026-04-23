@@ -1,4 +1,3 @@
-// app/book/[id]/page.tsx  (or components/BookingPage.tsx)
 "use client";
 import { useState } from "react";
 import { Avatar, Badge, StarRating, Btn } from "@/components/ui";

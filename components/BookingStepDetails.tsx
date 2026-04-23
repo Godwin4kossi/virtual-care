@@ -1,4 +1,3 @@
-// components/BookingStepDetails.tsx
 "use client";
 import { Input, Textarea } from "@/components/ui";
 import T from "@/lib/tokens";

@@ -1,4 +1,3 @@
-// components/AppointmentCard.tsx
 "use client";
 import { Avatar, Badge } from "@/components/ui";
 import T from "@/lib/tokens";

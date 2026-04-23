@@ -12,16 +12,17 @@ interface AppointmentsPageProps {
 }
 
 export default function AppointmentsPage({ appointments, onCancel }: AppointmentsPageProps) {
-  const [tab,          setTab]          = useState<TabType>("upcoming");
+  const safeAppointments = appointments ?? [];
+  const [tab, setTab]          = useState<TabType>("upcoming");
   const [cancelTarget, setCancelTarget] = useState<Appointment | null>(null);
 
   const now = new Date();
 
-  const upcoming = appointments
+  const upcoming = safeAppointments
     .filter(a => new Date(a.date + "T" + a.time) >= now)
     .sort((a, b) => new Date(a.date + "T" + a.time).getTime() - new Date(b.date + "T" + b.time).getTime());
 
-  const past = appointments
+  const past = safeAppointments
     .filter(a => new Date(a.date + "T" + a.time) < now)
     .sort((a, b) => new Date(b.date + "T" + b.time).getTime() - new Date(a.date + "T" + a.time).getTime());
 

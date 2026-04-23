@@ -1,4 +1,3 @@
-// app/page.tsx  (or components/HomePage.tsx)
 "use client";
 import { Avatar, Btn, SectionLabel } from "@/components/ui";
 import MiniDoctorCard from "@/components/MiniDoctorCard";

@@ -1,4 +1,4 @@
-// components/BookingStepReview.tsx
+"use client";
 import T from "@/lib/tokens";
 import { Doctor, VisitType } from "@/lib/types";
 import { formatDate } from "@/lib/utils";

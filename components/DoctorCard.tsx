@@ -1,4 +1,3 @@
-// app/doctors/page.tsx  (or components/DoctorsPage.tsx)
 "use client";
 import { useState } from "react";
 import DoctorCard from "@/components/DoctorCard";
